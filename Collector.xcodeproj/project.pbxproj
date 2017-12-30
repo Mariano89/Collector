@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		201778E11FF75F86002595B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201778E01FF75F86002595B0 /* AppDelegate.swift */; };
-		201778E31FF75F86002595B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201778E21FF75F86002595B0 /* ViewController.swift */; };
 		201778E61FF75F86002595B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201778E41FF75F86002595B0 /* Main.storyboard */; };
 		201778E91FF75F86002595B0 /* Collector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 201778E71FF75F86002595B0 /* Collector.xcdatamodeld */; };
 		201778EB1FF75F86002595B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201778EA1FF75F86002595B0 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		201778DD1FF75F86002595B0 /* Collector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		201778E01FF75F86002595B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		201778E21FF75F86002595B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		201778E51FF75F86002595B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		201778E81FF75F86002595B0 /* Collector.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Collector.xcdatamodel; sourceTree = "<group>"; };
 		201778EA1FF75F86002595B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				201778E01FF75F86002595B0 /* AppDelegate.swift */,
-				201778E21FF75F86002595B0 /* ViewController.swift */,
 				201778E41FF75F86002595B0 /* Main.storyboard */,
 				201778EA1FF75F86002595B0 /* Assets.xcassets */,
 				201778EC1FF75F86002595B0 /* LaunchScreen.storyboard */,
@@ -140,7 +137,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				201778E91FF75F86002595B0 /* Collector.xcdatamodeld in Sources */,
-				201778E31FF75F86002595B0 /* ViewController.swift in Sources */,
 				201778E11FF75F86002595B0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
