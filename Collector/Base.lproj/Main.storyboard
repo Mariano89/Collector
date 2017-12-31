@@ -47,15 +47,15 @@
             </objects>
             <point key="canvasLocation" x="561" y="89"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Item View Controller-->
         <scene sceneID="ecu-il-62m">
             <objects>
-                <viewController id="wYO-2H-xaR" sceneMemberID="viewController">
+                <viewController id="wYO-2H-xaR" customClass="AddItemViewController" customModule="Collector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DJT-L1-LOZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zk2-Dn-gyy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo-camera" translatesAutoresizingMaskIntoConstraints="NO" id="Zk2-Dn-gyy">
                                 <rect key="frame" x="20" y="84" width="335" height="251.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Zk2-Dn-gyy" secondAttribute="height" multiplier="4:3" id="i1V-JV-NSe"/>
@@ -70,6 +70,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CzE-SJ-NQl">
                                 <rect key="frame" x="172" y="381.5" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="wYO-2H-xaR" eventType="touchUpInside" id="4qe-JX-fW7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -88,10 +91,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="bMf-C7-gjz">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="Gly-k5-5j3"/>
-                            <barButtonItem systemItem="organize" id="Wvh-qr-B11"/>
+                            <barButtonItem systemItem="camera" id="Gly-k5-5j3">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="wYO-2H-xaR" id="8XT-0q-aL5"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="organize" id="Wvh-qr-B11">
+                                <connections>
+                                    <action selector="photosTapped:" destination="wYO-2H-xaR" id="fD9-Zl-HbN"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="itemImageView" destination="Zk2-Dn-gyy" id="48P-b1-VCZ"/>
+                        <outlet property="titleTextField" destination="dJB-n1-kLB" id="Q41-3b-gyz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z2v-Yn-asd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,4 +129,7 @@
             <point key="canvasLocation" x="-391" y="89"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="photo-camera" width="256" height="256"/>
+    </resources>
 </document>
